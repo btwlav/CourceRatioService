@@ -4,7 +4,7 @@ plugins {
     id 'java'
 }
 
-group = 'com.cource.ratio.service'
+group = 'com.course.ratio.service'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '18'
 
@@ -21,6 +21,10 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    implementation 'org.projectlombok:lombok'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
 }
 
 dependencyManagement {
